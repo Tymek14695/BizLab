@@ -5,7 +5,7 @@
         <header>
             <h3>Zarejestruj się</h3>
         </header>
-        <form action='{{url_for("register", method="get")}}'>
+        <form action='{{url_for("register")}}' method='POST'>
             <div class="row"><div class="col"></div><div class="col"><div class="text-right">Nazwa użytkownika:</div></div><div class="col"><input type='text' name='username'></div><div class="col"></div></div>
             <div class="row"><div class="col"></div><div class="col"><div class="text-right">Adres e-mail:</div></div><div class="col"><input type='text' name='email'></div><div class="col"></div></div>
             <div class="row"><div class="col"></div><div class="col">Hasło:</div><div class="col"><input type='password' name='password'></div><div class="col"></div></div>

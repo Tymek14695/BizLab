@@ -25,10 +25,12 @@ def login():
 
 @app.route('/register', methods=['GET', 'POST'])
 def register():
+    print('xd')
     if request.method == 'POST':
+        username = request.form.get('username')
         email = request.form.get('email')
-        
-        return '<div class="container-sm p-5 text-success-emphasis bg-success-subtle border border-success-subtle rounded-5">{email}</div>'
+        password = request.form.get('password')
+        retypePassword = request.form.get('retypePassword')
     return render_template('register.html')
 
 
