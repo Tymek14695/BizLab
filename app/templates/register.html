@@ -1,0 +1,19 @@
+{%extends 'base.html'%}
+{%block title%}Rejestracja{%endblock%}
+{%block content%}
+    <div class='container-sm p-1 text-primary-emphasis bg-primary-subtle border border-primary-subtle rounded-0'>
+        <header>
+            <h3>Zarejestruj się</h3>
+        </header>
+        <form action='{{url_for("register", method="get")}}'>
+            <div class="row"><div class="col"></div><div class="col"><div class="text-right">Nazwa użytkownika:</div></div><div class="col"><input type='text' name='username'></div><div class="col"></div></div>
+            <div class="row"><div class="col"></div><div class="col"><div class="text-right">Adres e-mail:</div></div><div class="col"><input type='text' name='email'></div><div class="col"></div></div>
+            <div class="row"><div class="col"></div><div class="col">Hasło:</div><div class="col"><input type='password' name='password'></div><div class="col"></div></div>
+            <div class="row"><div class="col"></div><div class="col">Powtórz hasło:</div><div class="col"><input type='password' name='retypePassword'></div><div class="col"></div></div>
+            <div class="row"><div class="col"></div><div class="col">Zarejestruj:</div><div class="col"><input type='submit' name='OK'></div><div class="col"></div></div>
+        </form>
+        <footer>
+            <h5>Rejestrując się akceptujesz regulamin.</h5>
+        </footer>
+    </div>
+{%endblock%}
